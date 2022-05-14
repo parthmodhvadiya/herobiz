@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Aviato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TOP HEADER -->
+
+    <section class="topheader">
+        <div class="container">
+            <div class="topnav">
+                <div class="col-sm-4 topnav-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0129- 12323-123123</span>
+                </div>
+
+                <div class="col-sm-4 topnav-2">
+                    <span>AVIATO</span>
+                </div>
+
+                <div class="col-sm-4 topnav-3">
+                    <ul class="dropdownnav">
+                    <div class="dropdown ">
+                        <li class="cart" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-cart-shopping"></i> <span>Cart</span>
+                        </li>
+                        <ul class="dropdown-menu dropdown-1" aria-labelledby="dropdownMenuButton1">
+                            <div class="dropdown-item dropdown-item-1">
+                                <img src="https://demo.themefisher.com/aviato/images/shop/cart/cart-1.jpg" alt="#">
+                                <div class="dropdown-element-1"> 
+                                    <a href="#">Ladies Bag</a>
+                                    <span>1 x 1250.00</span>
+                                    <strong>$1200</strong>
+                                    <i class="fa-solid fa-square-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="dropdown-item dropdown-item-1">
+                                <img src="https://demo.themefisher.com/aviato/images/shop/cart/cart-2.jpg" alt="#">
+                                <div class="dropdown-element-1"> 
+                                    <a href="#">Ladies Bag</a>
+                                    <span>1 x 1250.00</span>
+                                    <strong>$1200</strong>
+                                    <i class="fa-solid fa-square-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="dropdown-item dropdown-item-2">
+                                <span>Total</span>
+                                <span>$1799.00</span>
+                            </div>
+                              <div class="dropdown-item dropdown-item-3"><a  href="#">VIEW CART</a><a  href="#">CHECKOUT</a></div>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <li class="cart" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i> <span>shop</span></li>
+                        <ul class="dropdown-menu dropdown-2" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item dropdown-item-1"> 
+                            <input type="text" placeholder="Search....">
+                        </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <select class="select">
+                            <option>EN</option>
+                            <option>DE</option>
+                            <option>FR</option>
+                            <option>ES</option>
+                        </select>
+                      </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-md  container navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Main Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav parth">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  SHOP <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu navdropdown-1" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="row dropdown-item navdropdown-item">
+                    <div class="col-sm-6">
+                        <div class="navbarspan">
+                            
+                       <span>Pages</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">CHECKOUT</a></li>
+                            <li><a href="#">CART</a></li>
+                            <li><a href="#">PRICING</a></li>
+                            <li><a href="#">CONFIRMARION</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="navbarspan">
+                        <span>Layout</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Product <br>
+                                Details</a></li>
+                            <li><a href="#">Shop With <br>
+                                 Sidebar</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  BLOG <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu navdropdown-2 navdropdown-3" aria-labelledby="navbarDropdownMenuLink">
+                  <ul>
+                      <li><a href="#">Blog Left Sidebar</a></li>
+                      <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                      <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                      <li><a href="blog-grid.html">Blog 2 Columns</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ELEMENTS <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu navdropdown-2 navdropdown-4" aria-labelledby="navbarDropdownMenuLink">
+                  <ul>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                      <li><a href="blog-right-sidebar.html">Alerts</a></li>
+                  </ul>
+                </div>
+              </li>
+          </ul>
+    </div>
+      </nav>
+
+      <div class="owl-carousel owl-slide owl-theme">
+        <div  class="slide-item slide-item-1" > 
+            <div class="slide slide-1">
+               <p data-aos="fade-up" data-aos-duration="1000" >PRODUCTS</p>
+               <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">The beauty of nature 
+                   <br>
+                   is hidden in details.
+               </h1>
+               <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Shop Now</button>
+            </div>
+        </div>
+        <div class="slide-item slide-item-2" >
+            <div class="slide slide-2">
+                <p data-aos="fade-up" data-aos-duration="1000" >PRODUCTS</p>
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">The beauty of nature 
+                    <br>
+                    is hidden in details.
+                </h1>
+                <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Shop Now</button>
+             </div>
+        </div>
+        <div class="slide-item slide-item-3" >
+            <div class="slide slide-3">
+                <p data-aos="fade-up" data-aos-duration="1000" >PRODUCTS</p>
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">The beauty of nature 
+                    <br>
+                    is hidden in details.
+                </h1>
+                <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Shop Now</button>
+             </div>
+        </div>
+        </div>
+
+        <!-- PRODUCT CATEGORY -->
+
+        <section class="product-category">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                    <div class="product-header">
+                              <h2>Product Category</h2>
+                    </div>
+                  </div>
+               </div>
+               <div class="row">
+                 <div class="col-lg-6">
+                    <div class="product-item-1">
+                       <img src="https://demo.themefisher.com/aviato/images/shop/category/category-1.jpg" alt="#">
+                       <div class="product-content">
+                           <h3>Clothes Sales</h3>
+                           <p>Shop New Season Clothing</p>
+                       </div>
+                    </div>
+                    <div class="product-item-1">
+                      <img src="https://demo.themefisher.com/aviato/images/shop/category/category-2.jpg" alt="#">
+                      <div class="product-content">
+                          <h3>Smart Casuals</h3>
+                          <p>Get Wide Range Selection</p>
+                      </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6">
+                    <div class="product-item-2">
+                      <img src="https://demo.themefisher.com/aviato/images/shop/category/category-3.jpg" alt="#">
+                      <div class="product-content">
+                        <h3>Clothes Sales</h3>
+                        <p>Shop New Season Clothing</p>
+                    </div>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </section>
+
+        <!--TRENDY PRODUCTS  -->
+
+        <section class="trendy-products">
+           <div class="container">
+             <div class="row">
+                <div class="col-lg-12">
+                  <div class="product-header">
+                    <h2>Trendy Products</h2>
+                  </div>
+                </div>
+             </div>
+             <div class="row">
+               <div class="col-lg-4">
+                 <div class="trandy">
+                    <img src="https://demo.themefisher.com/aviato/images/shop/products/product-1.jpg" alt="#">
+                    
+                    <span>Sale</span>
+                      <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                      </div>   
+
+                    <div class="trandy-content">
+                      <h4>Reef Boardsport</h4>
+                      <p>$200</p>
+                    </div>
+                 </div>
+               </div>
+               <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-2.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$200</p>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-3.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$230</p>
+                   </div>
+                </div>
+              </div>
+             </div>
+             <div class="row">
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-4.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Bradley Mid</h4>
+                     <p>$200</p>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-5.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$200</p>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-6.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$200</p>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-7.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$200</p>
+
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-8.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$200</p>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="trandy">
+                   <img src="https://demo.themefisher.com/aviato/images/shop/products/product-9.jpg" alt="#">
+                   
+                   <span>Sale</span>
+                     <div  data-aos="fade-up" data-aos-duration="500" class="trandy-icons">
+                       <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                       <span><i class="fa-solid fa-heart"></i></span>
+                       <span><i class="fa-solid fa-cart-shopping"></i></span>
+                     </div>   
+
+                   <div class="trandy-content">
+                     <h4>Rainbow Shoes</h4>
+                     <p>$200</p>
+                   </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+        <!-- NEWLETTER -->
+        <section class="newletter">
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="newletter-content">
+                <h2>SUBSCRIBE TO NEWSLETTER</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, <br> facilis numquam impedit ut sequi. Minus facilis vitae excepturi sit laboriosam.</p>
+              </div>
+              <div class="newletter-button">
+                <input type="text"  placeholder="Enter Your Email Address">
+                <span>Subscribe Now!</span>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!-- SLIDER -->
+        <section class="slider">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="product-header">
+                  <h2>View us on instagram</h2>
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="owl-carousel owl-slider-1 owl-theme">
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90709202_702641303608541_1148532720313835468_n.jpg?_nc_cat=101&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=yY1Gl7KhPMkAX-3oee_&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-7-OkzluEDxPDaRXgYID0sJqqqA7c7pxb6G3DMYJtPTw&oe=62818F20" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91233500_195873711860039_3890786202337752066_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=uIvFuI1ZsjwAX-1oUNG&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8wg8UBN4boq9IGP-GD5O8HFygDoDWfMYVfP19yt5-Cdg&oe=6281E8A2" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91126747_1086160688428851_7904030645569569609_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=15EzgXnHwDMAX8HWyba&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9f0zJQiYTE_7PLqDbVsSc0YccuLZUtIY-OAjn1WTnkvA&oe=62816100" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91168715_553665602198631_7096267060488569896_n.jpg?_nc_cat=101&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=2k-jl-lYnqEAX8LGU5O&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9amSEosYfvXnRBC5i17K8idbzeOdyQKgbxFBuU_Y7N1g&oe=6281C40E" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90482589_666062990600206_1945321731223612357_n.jpg?_nc_cat=103&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=IiS9bpaVyHMAX8vFLxp&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_ZM0VzVFF7MubwdpYcD9yyf1DuCMhpV9UVEsCAWGeBiw&oe=6281AF60" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91151967_653047975514889_1851021059778349579_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=SVYzzAXiqZ4AX-QxUKS&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9TRO4HX6QeT6Cm9q4eAhkNfVvEyufrm1CmjKJHc16Vbg&oe=628209FD" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90414912_846071562574259_337802699757909276_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=Vf-12aoljigAX8lxWXq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9QnuupPj0uGVjYhRTXWgQpegaHK2aBRsFHpAPeT4l6iw&oe=6280D977" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90955694_1057827777919950_7213952553572155539_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=JZ0cWML6oyAAX-14G3Q&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9vIduE70XAAtf0QYPO5vmnOKF2y5L6yQ3hm--2I8MbDg&oe=628134D4" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91162122_503819386954181_1058617280708195869_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=4Defy4LGkS4AX8Eq2zX&_nc_oc=AQnFL-QXxcj8oU4XB4XU6Nh2LMwd6KtmVCb9QnHmdK0E0VItjLpekq_DgL9FeCEu7dQcUNgz14h3N6AK17IDqqMm&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8l1IQ_OJscdD-QBbEpAV4DnMs5kUFOGd6uV8ShbJF-Hg&oe=62816735" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91109083_1120372704966860_2933084135840173247_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=dcpMdlz8hDoAX_F_W7b&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-RKA8teeJdK-w_60EF_UICUALD85TMlN_V8rcCi8FQHw&oe=6281F9E7" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90323071_904061233411924_6358255878716887166_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=QCx5ITZ2H40AX-gQJCn&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8hTXY_Mr2UydTCplxBbG46-gJPh8vS6lWdWM-lqJZH2Q&oe=62821E50" alt="#">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90222641_677471503063786_7309970258651041185_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=aebw57NjQKUAX-3kSf4&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_Lx3KipxVz2aQ3DM8dnC8QyaYKDjtjaw5VZ-dgtHvv2g&oe=628144C4" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90715147_119653349643716_3997218578353339527_n.jpg?_nc_cat=101&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=s2YerkxPyEkAX-TWY8_&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8HrbXV6V0Smc2mQHagUV0lvq0wQWEGMYzdeEkMRpLqfA&oe=628095D5" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/90741694_889744144800812_2031172282264803100_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=5qI4hgr869wAX8vAovK&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT99TFGxgrZs2vn_QwB2IA5h8dcxS49XjuISujQ9HT6GHA&oe=62805F38" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/89069129_2574212642821887_742378517365097179_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=xdzphZPSK_UAX-dbTIY&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_D1pb4LVjJ8DLlBrBBYzE5GXCEaOZSeptvYv7_co4WmQ&oe=6280D426" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="https://scontent.cdninstagram.com/v/t51.2885-15/91846696_643876209518194_532827314761909988_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=8ae9d6&_nc_ohc=fSQ6X1zXHrMAX_1Osd3&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8qXtfqpW4L0wUGbt1hW4ap2QVU2HhgJVxRVkA5tmqJ4A&oe=6281EFC0" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- FOOTER -->
+        </section>
+        <section class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-1 footer-content">
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+            <div class="footer-2 footer-content">
+            <ul>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+            </ul>
+          </div>
+          <p>Copyright ©2021, Designed &amp; Developed by <a href="#">Themefisher</a></p>
+            </div>
+          </div>
+        </section>
+
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
